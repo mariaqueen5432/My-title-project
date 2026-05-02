@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Element selector */
+h1 {
+  color: darkblue;
+}
+
+/* Class selector */
+.nav {
+  margin: 20px;
+}
+
+.nav-btn {
+  width: 100px;
+  margin: 5px;
+}
+
+.img {
+  width: 150px;
+}
+
+.gallery {
+  width: 150px;
+  margin: 10px;
+}
+/* ID selector */
+#special {
+  color: red;
+}
+
+/* Group selector */
+h1, p {
+  margin: 10px;
+}
+
+/* Descendant selector */
+.nav img {
+  border: 2px solid black;
+}
+
+/* Background image */
+.bg-image {
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+/* Gradient background */
+.gradient-bg {
+  background: linear-gradient(to right, blue, purple);
+  color: white;
+}
+img1 {
+  width: 150px;
+}
