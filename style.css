@@ -1,57 +1,81 @@
+/* 1. Guud ahaan Bogga (Background-ka iyo Farta) */
 body {
-  font-family: Arial;
-  text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926'); /* Halkaan midab ama sawir dhig */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nooca farta */
+    color: #333333; /* Midabka qoraalka guud */
+    margin: 0;
+    padding: 0;
 }
 
-/* Element selector */
-h1 {
-  color: darkblue;
-}
-
-/* Class selector */
+/* 2. Menu-ka sare (Navigation Bar) */
 .nav {
-  margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Midabka gadaasha menu-ka (Cadaan yar oo hufan) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px; /* Inay icon-yada kala fogaadaan */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* 3. Habeynta Icon-yada Menu-ka */
 .nav-btn {
-  width: 100px;
-  margin: 5px;
+    width: 45px;  /* Cabirka icon-ka */
+    height: 45px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Markaad mouse-ka dul dhigto inuu dhaqaaqo */
 }
 
-.img {
-  width: 150px;
+.nav-btn:hover {
+    transform: scale(1.2); /* Inuu weynaado markaad dul istaagto */
 }
 
-.gallery {
-  width: 150px;
-  margin: 10px;
-}
-/* ID selector */
-#special {
-  color: red;
-}
-
-/* Group selector */
-h1, p {
-  margin: 10px;
+/* 4. Cinwaannada (Headings) */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
-/* Descendant selector */
-.nav img {
-  border: 2px solid black;
+/* 5. Qoraalka Paragraph-ka */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); /* Background yar oo qoraalka hoos fadhiya */
+    padding: 10px;
+    border-radius: 8px;
 }
 
-/* Background image */
-.bg-image {
-  background-image: url('bg.jpg');
-  background-size: cover;
+/* 6. Sawirada Gallery-ga */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Gradient background */
-.gradient-bg {
-  background: linear-gradient(to right, blue, purple);
-  color: white;
+/* 7. Liiska (List Items) */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
-img1 {
-  width: 150px;
+
+ul li {
+    background: #ffffff;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #e67e22; /* Midabka farta liiska */
 }
+ 
